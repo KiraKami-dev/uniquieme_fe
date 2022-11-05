@@ -9,11 +9,7 @@ module.exports = {
       colors:{
         'Backblue' : '#7FD8E0',
       },
-      keyframes:{
-        leftinft : {
-          
-        }
-      }
+
     },
   },
   plugins: [],
