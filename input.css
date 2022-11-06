@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base{
+    @font-face {
+        font-family: "Another";
+        src: url('./font/atwriter.ttf') format('ttf');
+    }
+}
+
+body{
+    background: linear-gradient(180deg, #8565CB 32.81%, #083145 98.14%);
+    font-family: "Another";
+}
