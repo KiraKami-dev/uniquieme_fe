@@ -2,14 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base{
-    @font-face {
-        font-family: "another";
-        src: url('./font/atwriter.ttf') format('ttf');
-    }
+
+@font-face {
+    font-family: 'another';
+    src: url('./font/atwriter.ttf');
 }
 
 body{
     background: linear-gradient(180deg, #8565CB 32.81%, #083145 98.14%);
-    font-family: "another";
+    font-family: 'another';
 }
+
+.typed-out{
+    overflow: hidden;
+    border-right: .15em solid white;
+    white-space: nowrap;
+    animation: typing 1.2s steps(20, end) infinite alternate both;
+    font-size: 1.6rem;
+    width: 0;
+  }
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
