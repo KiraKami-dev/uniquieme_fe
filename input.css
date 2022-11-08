@@ -2,7 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-
+@layer base {
+  body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+}
 @font-face {
     font-family: 'another';
     src: url('./font/atwriter.ttf');
@@ -10,7 +14,6 @@
 
 body{
     background: linear-gradient(180deg, #8565CB 32.81%, #083145 98.14%);
-    font-family: 'another';
 }
 
 .typed-out{
@@ -23,5 +26,22 @@ body{
   }
   @keyframes typing {
     from { width: 0 }
-    to { width: 100% }
+    to { width: 110% }
+  }
+
+  .seaanimation{
+    width: 300%;
+    animation-name: sea;
+    /* animation-duration:10s;
+    animation-fill-mode: both;
+    animation-iteration-count:linear infinite; */
+    animation: sea 5s linear infinite;
+    transform: translate(0,-50%);
+  }
+  @keyframes sea {
+    /* from{transform: translateX(-200px);}
+    to {transform: translateX(1000px);} */
+    0%{right: 0px;}
+    50%{right: -150px;}
+    100%{right: 0;}
   }

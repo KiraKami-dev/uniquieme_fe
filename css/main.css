@@ -416,6 +416,10 @@ video {
   display: none;
 }
 
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -557,6 +561,14 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.right-1 {
+  right: 0.25rem;
+}
+
 .z-0 {
   z-index: 0;
 }
@@ -569,8 +581,8 @@ video {
   margin: 0px;
 }
 
-.-m-\[80px\] {
-  margin: -80px;
+.-m-\[90px\] {
+  margin: -90px;
 }
 
 .m-auto {
@@ -589,6 +601,10 @@ video {
   margin: 2.5rem;
 }
 
+.mt-\[364px\] {
+  margin-top: 364px;
+}
+
 .mt-60 {
   margin-top: 15rem;
 }
@@ -603,6 +619,10 @@ video {
 
 .mt-10 {
   margin-top: 2.5rem;
+}
+
+.block {
+  display: block;
 }
 
 .flex {
@@ -625,6 +645,10 @@ video {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
+}
+
+.h-36 {
+  height: 9rem;
 }
 
 .h-10 {
@@ -665,6 +689,10 @@ video {
   width: fit-content;
 }
 
+.w-screen {
+  width: 100vw;
+}
+
 .max-w-\[75\%\] {
   max-width: 75%;
 }
@@ -689,9 +717,26 @@ video {
   }
 }
 
-.animate-\[wiggle_1s_ease-in-out_infinite\] {
-  -webkit-animation: wiggle 1s ease-in-out infinite;
-          animation: wiggle 1s ease-in-out infinite;
+.animate-\[wiggle_3s_ease-in-out_infinite\] {
+  -webkit-animation: wiggle 3s ease-in-out infinite;
+          animation: wiggle 3s ease-in-out infinite;
+}
+
+@-webkit-keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  -webkit-animation: spin 1s linear infinite;
+          animation: spin 1s linear infinite;
 }
 
 .flex-row {
@@ -730,6 +775,14 @@ video {
   justify-content: space-evenly;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.overflow-clip {
+  overflow: clip;
+}
+
 .rounded-2xl {
   border-radius: 1rem;
 }
@@ -760,6 +813,14 @@ video {
 .bg-yellow-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(254 252 232 / var(--tw-bg-opacity));
+}
+
+.bg-\[url\(\'\/img\/sea\.png\'\)\] {
+  background-image: url('/img/sea.png');
+}
+
+.bg-repeat {
+  background-repeat: repeat;
 }
 
 .p-0 {
@@ -849,7 +910,6 @@ video {
 
 body{
   background: linear-gradient(180deg, #8565CB 32.81%, #083145 98.14%);
-  font-family: 'another';
 }
 
 .typed-out{
@@ -868,7 +928,7 @@ body{
   }
 
   to {
-    width: 100%
+    width: 110%
   }
 }
 
@@ -878,7 +938,53 @@ body{
   }
 
   to {
-    width: 100%
+    width: 110%
+  }
+}
+
+.seaanimation{
+  width: 300%;
+  -webkit-animation-name: sea;
+          animation-name: sea;
+  /* animation-duration:10s;
+    animation-fill-mode: both;
+    animation-iteration-count:linear infinite; */
+  -webkit-animation: sea 5s linear infinite;
+          animation: sea 5s linear infinite;
+  transform: translate(0,-50%);
+}
+
+@-webkit-keyframes sea {
+  /* from{transform: translateX(-200px);}
+    to {transform: translateX(1000px);} */
+
+  0%{
+    right: 0px;
+  }
+
+  50%{
+    right: -150px;
+  }
+
+  100%{
+    right: 0;
+  }
+}
+
+@keyframes sea {
+  /* from{transform: translateX(-200px);}
+    to {transform: translateX(1000px);} */
+
+  0%{
+    right: 0px;
+  }
+
+  50%{
+    right: -150px;
+  }
+
+  100%{
+    right: 0;
   }
 }
 

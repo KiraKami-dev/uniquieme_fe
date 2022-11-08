@@ -10,22 +10,23 @@
     <title>Unique me</title>
 </head>
 <body class="antialiased m-0 p-0 bg-[#7FD8E0] font-another ">
-    <section class=" h-screen">
+    <section class=" h-screen ">
         <div class="flex flex-col h-screen md:flex-row-reverse content-center justify-evenly m md:items-center md:mx-20  ">
         <!-- Animated ship -->
         
-        <div class="flex flex-col items-center md:items-end">
+        <div class="flex flex-col items-center md:items-end overflow-hidden">
                 <!-- lg:h-[32rem] lg:w-[32rem] lg:mt-56  -->
-        <img class="h-96 w-96 lg:scale-110 z-0 animate-[wiggle_1s_ease-in-out_infinite]" src="./img/ship.png" alt="Ship">
+        <img class="h-96 w-96 lg:scale-110 z-0 animate-[wiggle_3s_ease-in-out_infinite]" src="./img/ship.png" alt="Ship">
         <!-- inifnite sea -->
-        <img class="h-max w-max -m-[80px] z-10" src="./img/Sea.png" alt="Sea">
+        <!-- <img class="h-max w-max -m-[90px] z-10" src="./img/Sea.png" alt="Sea"> -->
+        <div class="seaanimation block right-1 absolute mt-[364px] h-36 bg-repeat w-screen  bg-[url('/img/sea.png')] "></div>
 
         </div>            
         <!-- Hero Text -->
         <!-- Type writter animation -->
         <div class="text-white">
         <h1 class="text-6xl text-center md:text-left mt-60 md:m-0 font-another"> <b>Start with</b> </h1>
-        <h1 class="text-5xl mt-1 typed-out"> Being <span>"U"</span>nique </h1>
+        <h1 class="text-5xl mt-1 typed-out overflow-hidden"> Being <span>"U"</span>nique </h1>
         </div>
         </div>
     </section>
@@ -62,7 +63,7 @@
                 <!-- Youtube -->
                 <div class=" w-44 h-44 flex flex-col justify-around hover:translate-y-1">
                     <img id="Instagram" src="/img/Youtube.png" class="max-w-[75%] m-auto">
-                    <img id="Refresh" src="/img/Refresh.png" class=" h-fit w-fit m-auto">
+                    <img id="Refresh" src="/img/Refresh.png" class=" h-fit w-fit m-auto animate-spin">
                     <img id="Check" src="/img/Tick.png" class="hidden h-fit w-fit m-auto">
                     <img id="Cancel" src="/img/wrong.png" class="hidden h-fit w-fit m-auto">
                 </div>
